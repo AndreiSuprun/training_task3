@@ -3,9 +3,9 @@ package com.suprun.basketfilling.entity;
 // entity class for ball
 public class Ball {
 
-    private int volume;
-    private int weight;
-    private Color color;
+    private final int volume;
+    private final int weight;
+    private final Color color;
 
     public Ball(int volume, int weight, Color color) {
         this.volume = volume;
@@ -17,24 +17,12 @@ public class Ball {
         return volume;
     }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
-
     public int getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
     public Color getColor() {
         return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
     }
 
     public enum Color {
